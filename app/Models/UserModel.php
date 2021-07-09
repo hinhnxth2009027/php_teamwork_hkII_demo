@@ -7,9 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserModel extends Model
 {
+
+    protected $table = 'users';
     use HasFactory;
-    protected $table = "users";
-    protected $fillable =[
+    protected $fillable = [
         'firstName',
         'lastName',
         'email',
@@ -20,5 +21,6 @@ class UserModel extends Model
         'avatar',
         'coverPhoto',
     ];
+
 
 }
