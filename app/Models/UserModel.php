@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserModel extends Model
 {
+
     protected $table = 'users';
     use HasFactory;
     protected $fillable = [
@@ -18,6 +19,8 @@ class UserModel extends Model
         'birthday',
         'address',
         'avatar',
-        'coverPhoto'
-        ];
+        'coverPhoto',
+    ];
+
+
 }
