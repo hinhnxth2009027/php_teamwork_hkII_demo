@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// Router của Ngọc Anh
+
+Route::prefix('bai-tap-cua-ngoc-anh')->group(function (){
+    Route::get('/login',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'viewLogin']);
+
+    Route::post('/register',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'viewRegister'])->name('register');
+});
+// Router của Ngọc Anh
