@@ -37,3 +37,15 @@ Route::prefix('baitapcuacuong')->group(function (){
     Route::get('/articleget',[\App\Http\Controllers\cuong_demo_facebook_controler::class,'articleget'])->name('article_get');
 });
 //routers của cường
+
+// Router của Ngọc Anh
+
+Route::prefix('bai-tap-cua-ngoc-anh')->group(function (){
+    Route::get('/login',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'viewLogin']);
+
+    Route::post('/register',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'viewRegister'])->name('register');
+});
+// Router của Ngọc Anh
+
+
+
